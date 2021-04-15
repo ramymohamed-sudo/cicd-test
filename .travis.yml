@@ -9,9 +9,12 @@ services:
 language: python 
 
 before_install:  
-  docker image build -t ${IMGNAME} .
+  
   docker build --tag my/mqtt-subscriber ./publisher 
-  docker run my/mqtt-subscriber 
+
+
+# docker image build -t ${IMGNAME} .
+# docker run my/mqtt-subscriber 
 
 # script:
 #   # Travis CI seems to be coming in on undocumented IP addresss. 
