@@ -10,7 +10,7 @@ language: python
 
 before_install:  
   
-  docker build --tag my/mqtt-subscriber ./publisher 
+  docker build --tag my/mqtt-subscriber . 
 
 
 # docker image build -t ${IMGNAME} .
