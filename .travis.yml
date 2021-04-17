@@ -6,7 +6,7 @@ arch:
 services:
   - docker 
 
-# language: python 
+language: python
 
 before_install:  
   
