@@ -12,8 +12,8 @@ before_install:
   
   docker build --tag my/mqtt-subscriber . 
 
-# script:
-#   - pytest
+script:
+  - pytest
 
 # docker image build -t ${IMGNAME} .
 # docker run my/mqtt-subscriber 
