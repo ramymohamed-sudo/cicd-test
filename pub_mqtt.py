@@ -10,32 +10,31 @@
 #
 # For simplicity, install the broker on the host device
 # from csv import writer
-import paho.mqtt.client as mqtt
-import csv
-from time import sleep
+# import paho.mqtt.client as mqtt
+# import csv
+# from time import sleep
 
 
-def on_connect(pvtClient, userdata, flags, rc):
-    print("** Connected to client! Return Code:"+str(rc))
-    client.subscribe("$/SYS#")
+# def on_connect(pvtClient, userdata, flags, rc):
+#     print("** Connected to client! Return Code:"+str(rc))
+#     client.subscribe("$/SYS#")
 
 
-def on_message(client, userdata, msg):
-    print("** "+msg.topic+" "+str(msg.payload))
+# def on_message(client, userdata, msg):
+#     print("** "+msg.topic+" "+str(msg.payload))
 
 
-client = mqtt.Client()
-client.on_connect = on_connect
-client.on_message = on_message
+# client = mqtt.Client()
+# client.on_connect = on_connect
+# client.on_message = on_message
 
-broker_address = '9.161.154.25'  # "mqtt.eclipse.org"
-client.connect(broker_address, 1883, 60)
-topic = "MQTTsecondcode"
+# broker_address = '9.161.154.25'  # "mqtt.eclipse.org"
+# client.connect(broker_address, 1883, 60)
+# topic = "MQTTsecondcode"
 
 
 def total(a, b):
     return a+b
-
     
 # with open('UC3.4_synthetic_kpis.csv', newline='') as csvfile:
 #     kpi_data_reader = csv.reader(csvfile, delimiter=',')
